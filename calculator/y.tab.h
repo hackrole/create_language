@@ -50,7 +50,9 @@ extern int yydebug;
     SUB = 260,
     MUL = 261,
     DIV = 262,
-    CR = 263
+    LP = 263,
+    RP = 264,
+    CR = 265
   };
 #endif
 /* Tokens.  */
@@ -59,7 +61,9 @@ extern int yydebug;
 #define SUB 260
 #define MUL 261
 #define DIV 262
-#define CR 263
+#define LP 263
+#define RP 264
+#define CR 265
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -71,7 +75,7 @@ union YYSTYPE
     int int_value;
     double double_value;
 
-#line 75 "y.tab.h" /* yacc.c:1909  */
+#line 79 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
